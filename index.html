@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- declare document type, it tells the browser what is the version of HTML that we are using (HTML5 in this course) -->
+<!-- uses autocomplete from emmet docs.emmet.io/cheat-sheet/ (html + ENTER)-->
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- the head holds info about the webpage and tells the browser how it should handle the page
+     character set = UTF-8; gives extra meta deta to the html documents
+     all texts is encoded using the utf-8 system (chars)
+    jumbled all chars IS called a MOJIBAKE - chars are transformed because your browser is trying to render
+     the chars using the wrong char set (WRONG ENCODING) -->
+  <meta charset="utf-8">
+  <!-- utf-8 = unicodestandard encoding you should use while working with HTML5
+    includes emojis as well unicode-table.com
+    important to include as a Boilerplate code - international visitors see your content correctly-->
+  <meta name="description" content="This is my first site.">
+  <!-- Search engines go through your html code
+       and find this and put it as a description.-->
+  <title> 💞 Iva's Personal Site</title>
+</head>
+
+<body>
+  <!-- create the content of your website -->
+  <table cellspacing="20">
+    <tr>
+      <td>
+        <img src="profilepic!.jpg" alt="Iva's Profile Picture" width="250" height="200">
+        <!-- alt can be interesting for SEO; image source - pings the server of the website of LinkedIn, downloads and displays it -->
+      </td>
+      <td>
+        <h1> Iva Popova </h1> <!-- child contained inside the body; the beautify idents everything -->
+        <p> <em>Young professional/<strong>Graduate from KU Leuven</strong> </em></p>
+        <p> I am fresh graduate currently looking for a job in Belgium.
+          <strong><a href="https://www.linkedin.com/in/ivahpopova/"> Check out my LinkedIn profile.</a></strong>
+        </p>
+        <br>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h3> Academic Degrees </h3>
+  <ul>
+    <li>Master International Economics and Management (KUL)</li>
+    <li>Bachelor Enginering (KUL)</li>
+    <li>Nancho Popovich High school</li>
+  </ul>
+  <hr>
+  <h3>Work experience</h3>
+  <table cellspacing="5">
+    <!-- ugly html table <table border="1">
+      but by default you would have no border-->
+      <thead>
+        <tr>
+          <th>Period</th>
+          <th>Work</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2015-2020</td>
+          <td>Uni education</td>
+        </tr>
+        <tr>
+          <td>2017-2019</td>
+          <td>AIESEC</td>
+        </tr>
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+
+  </table>
+  <hr>
+  <table border="1">
+    <h3> Skills </h3>
+    <tr>
+      <td>
+    <table cellspacing="10">
+      <tr>
+        <td>HTML</td>
+        <td>★☆☆☆☆</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>★★☆☆☆</td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td>★★★★★</td>
+      </tr>
+    </table>
+      </td>
+      <td>
+    <table cellspacing="10">
+      <tr>
+        <td>Swimming</td>
+        <td>★☆☆☆☆</td>
+      </tr>
+      <tr>
+        <td>Singing</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Drawing</td>
+        <td>★★★☆☆</td>
+      </tr>
+    </table>
+      </td>
+      </tr>
+  </table>
+  <hr>
+  <a href="hobbies.html">My hobbies</a>
+  <p><a href="contactdetails.html">Contact me here!</a></p>
+</body>
+
+</html>
